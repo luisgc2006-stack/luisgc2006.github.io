@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalate Agency | Automation, Webs & Apps</title>
+    <meta name="description" content="Digital agency specializing in website development, mobile app development, and business automation for small and local businesses in Lynchburg, VA.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-effects">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- 1. Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Escalate Agency" id="main-logo" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block';">
+                <span id="logo-text" style="display:none;" class="logo-text-fallback">ESCALATE<br><span class="gold">AGENCY</span></span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-links">
+                    <a href="#services" data-i18n="nav_services" class="nav-link">Services</a>
+                    <a href="#process" data-i18n="nav_process" class="nav-link">Process</a>
+                    <a href="#about" data-i18n="nav_about" class="nav-link">About</a>
+                    <a href="#contact" data-i18n="nav_contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <button id="lang-toggle" class="lang-toggle">
+                        <span class="lang-en active">EN</span>|<span class="lang-es">ES</span>
+                    </button>
+                    <a href="#contact" class="btn btn-primary" data-i18n="nav_cta">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="location-badge">
+                <i class="fas fa-map-marker-alt"></i> <span data-i18n="hero_location">Lynchburg, VA & Surrounding Areas</span>
+            </div>
+            <h1 class="hero-title" data-i18n="hero_title">We Build Digital Systems That Scale Your Business</h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Automation | Webs & Apps</p>
+            <p class="bilingual-note" data-i18n="hero_bilingual">We also speak English — proudly serving our local Latino community.</p>
+            <div class="hero-ctas">
+                <a href="#contact" class="btn btn-primary" data-i18n="hero_cta1">Start Your Project</a>
+                <a href="#services" class="btn btn-secondary" data-i18n="hero_cta2">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-container">
+        <div class="marquee-content" data-i18n="marquee_text">
+            WEB DESIGN • DESARROLLO WEB • MOBILE APPS • APLICACIONES MÓVILES • AUTOMATION • AUTOMATIZACIÓN • 
+            WEB DESIGN • DESARROLLO WEB • MOBILE APPS • APLICACIONES MÓVILES • AUTOMATION • AUTOMATIZACIÓN • 
+        </div>
+    </div>
+
+    <!-- 3. Stats / Trust Bar -->
+    <section class="stats" id="stats">
+        <div class="container stats-container">
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label" data-i18n="stat_1">Projects Delivered</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3x</div>
+                <div class="stat-label" data-i18n="stat_2">Average ROI Boost</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">48h</div>
+                <div class="stat-label" data-i18n="stat_3">Response Time</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label" data-i18n="stat_4">Local & Bilingual</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="services_title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                    <h3 data-i18n="service_1_title">Web Development</h3>
+                    <h4 class="es-subtitle" data-i18n="service_1_subtitle">Desarrollo Web</h4>
+                    <p data-i18n="service_1_desc">Custom, high-performance websites built to convert visitors into clients. Mobile-first, SEO-optimized, and designed to represent your brand 24/7.</p>
+                    <div class="card-accent"></div>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 data-i18n="service_2_title">Mobile Apps</h3>
+                    <h4 class="es-subtitle" data-i18n="service_2_subtitle">Aplicaciones Móviles</h4>
+                    <p data-i18n="service_2_desc">Native and cross-platform apps that put your business in your customers' pockets. Booking systems, service apps, loyalty tools, and more.</p>
+                    <div class="card-accent"></div>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-cogs"></i></div>
+                    <h3 data-i18n="service_3_title">Business Automation</h3>
+                    <h4 class="es-subtitle" data-i18n="service_3_subtitle">Automatización de Negocios</h4>
+                    <p data-i18n="service_3_desc">Eliminate repetitive tasks with intelligent automation — CRM integrations, automated follow-ups, appointment booking, invoicing, and workflow systems.</p>
+                    <div class="card-accent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. How It Works / Process -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="process_title">How It Works</h2>
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3 data-i18n="process_1_title">Discovery</h3>
+                    <h4 class="es-subtitle" data-i18n="process_1_subtitle">Descubrimiento</h4>
+                    <p data-i18n="process_1_desc">We learn your business, goals, and challenges.</p>
+                </div>
+                <i class="fas fa-chevron-right step-arrow"></i>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3 data-i18n="process_2_title">Strategy</h3>
+                    <h4 class="es-subtitle" data-i18n="process_2_subtitle">Estrategia</h4>
+                    <p data-i18n="process_2_desc">We design a custom digital roadmap for your growth.</p>
+                </div>
+                <i class="fas fa-chevron-right step-arrow"></i>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3 data-i18n="process_3_title">Build</h3>
+                    <h4 class="es-subtitle" data-i18n="process_3_subtitle">Construcción</h4>
+                    <p data-i18n="process_3_desc">Our team builds your solution with precision and speed.</p>
+                </div>
+                <i class="fas fa-chevron-right step-arrow"></i>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3 data-i18n="process_4_title">Launch & Scale</h3>
+                    <h4 class="es-subtitle" data-i18n="process_4_subtitle">Lanzamiento</h4>
+                    <p data-i18n="process_4_desc">We go live and keep optimizing as you grow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. About Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-content">
+                <h2 class="section-title" data-i18n="about_title">Who We Are</h2>
+                <p class="about-mission" data-i18n="about_mission">Built by locals, for locals. We understand the hustle of small business — because we live it too.</p>
+                <p class="about-desc" data-i18n="about_desc">Escalate Agency was founded to bridge the digital gap for small and Latino-owned businesses in Central Virginia. We provide enterprise-level digital solutions scaled and priced for local growth.</p>
+            </div>
+            <div class="about-owners">
+                <div class="owner-card">
+                    <div class="avatar">LG</div>
+                    <div class="owner-info">
+                        <h3>Luis Guerrero</h3>
+                        <p data-i18n="owner_title">Co-Owner / Co-Fundador</p>
+                        <p class="owner-bio" data-i18n="owner_1_bio">Tech enthusiast bridging business and code.</p>
+                    </div>
+                </div>
+                <div class="owner-card">
+                    <div class="avatar">JG</div>
+                    <div class="owner-info">
+                        <h3>Jose Gutierrez</h3>
+                        <p data-i18n="owner_title">Co-Owner / Co-Fundador</p>
+                        <p class="owner-bio" data-i18n="owner_2_bio">Strategy focused on scaling local brands.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Service Area Section -->
+    <section class="service-area" id="service-area">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="service_area_title">Serving Lynchburg & Beyond</h2>
+            <div class="cities-grid">
+                <div class="city-tag main-city">Lynchburg</div>
+                <div class="city-tag">Amherst</div>
+                <div class="city-tag">Bedford</div>
+                <div class="city-tag">Forest</div>
+                <div class="city-tag">Madison Heights</div>
+                <div class="city-tag">Rustburg</div>
+                <div class="city-tag">Appomattox</div>
+                <div class="city-tag" data-i18n="service_area_others">Surrounding Areas</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="bilingual-label text-center" data-i18n="testimonials_label">What Our Clients Say</div>
+            <div class="testimonials-grid">
+                <div class="test-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="quote">"Escalate built an amazing booking system for our business. Completely changed how we operate!"</p>
+                    <div class="client-info">
+                        <strong>Client Name</strong>
+                        <span>Business Name, Lynchburg</span>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="quote">"Un equipo increíble, nos ayudaron con nuestro sitio web y los resultados han sido fantásticos."</p>
+                    <div class="client-info">
+                        <strong>Client Name</strong>
+                        <span>Business Name, Forest</span>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="quote">"Professional, fast, and exactly what we needed to scale our operations."</p>
+                    <div class="client-info">
+                        <strong>Client Name</strong>
+                        <span>Business Name, Madison Heights</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container contact-container">
+            <div class="contact-form-wrapper">
+                <h2 class="section-title" data-i18n="contact_title">Start Your Project</h2>
+                <form id="contactForm" action="mailto:escalateagency234@gmail.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name" data-i18n="form_name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="form_email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-i18n="form_phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service" data-i18n="form_service">Service of Interest</label>
+                        <div class="select-wrapper">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected data-i18n="form_service_placeholder">Select a service...</option>
+                                <option value="website" data-i18n="form_opt_website">Website</option>
+                                <option value="app" data-i18n="form_opt_app">Mobile App</option>
+                                <option value="automation" data-i18n="form_opt_auto">Automation</option>
+                                <option value="unsure" data-i18n="form_opt_unsure">Not Sure</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="form_message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit" data-i18n="form_submit">Send Message</button>
+                    <p class="form-note" data-i18n="form_note">We'll respond within 48 hours in English or Spanish.</p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2 class="section-title" data-i18n="contact_info_title">Get In Touch</h2>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <strong data-i18n="info_phone">Phone</strong>
+                        <p>(555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong data-i18n="info_email">Email</strong>
+                        <p>escalateagency234@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong data-i18n="info_location">Location</strong>
+                        <p>Lynchburg, VA</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="far fa-clock"></i>
+                    <div>
+                        <strong data-i18n="info_hours">Business Hours</strong>
+                        <p>Mon-Sun, 9am - 10pm</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="Escalate Agency" onerror="this.style.display='none'; document.getElementById('footer-logo-text').style.display='block';">
+                    <span id="footer-logo-text" style="display:none;" class="logo-text-fallback">ESCALATE <span class="gold">AGENCY</span></span>
+                </a>
+                <p class="tagline">Automation | Webs & Apps</p>
+                <div class="footer-lang">
+                    <button id="footer-lang-toggle" class="lang-toggle">
+                        <span class="lang-en active">EN</span>|<span class="lang-es">ES</span>
+                    </button>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer_links">Quick Links</h4>
+                <a href="#services" data-i18n="nav_services">Services</a>
+                <a href="#process" data-i18n="nav_process">Process</a>
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+            </div>
+            <div class="footer-owners">
+                <h4 data-i18n="footer_leadership">Leadership</h4>
+                <p>Luis Guerrero</p>
+                <p>Jose Gutierrez</p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p data-i18n="footer_copyright">&copy; 2025 Escalate Agency. All Rights Reserved.</p>
+            <p class="disclaimer" data-i18n="footer_disclaimer">Serving Lynchburg, VA and surrounding communities.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
