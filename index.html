@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -174,3 +175,228 @@
                         <h3>Luis Guerrero</h3>
                         <p data-i18n="owner_title">Co-Owner / Co-Fundador</p>
                         <p class="owner-bio" data-i18n="owner_1_bio">Tech enthusiast bridging business and code.</p>
+                    </div>
+                </div>
+                <div class="owner-card">
+                    <div class="avatar">JG</div>
+                    <div class="owner-info">
+                        <h3>Jose Gutierrez</h3>
+                        <p data-i18n="owner_title">Co-Owner / Co-Fundador</p>
+                        <p class="owner-bio" data-i18n="owner_2_bio">Strategy focused on scaling local brands.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Service Area Section -->
+    <section class="service-area" id="service-area">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="service_area_title">Serving Lynchburg & Beyond</h2>
+            <div class="cities-grid">
+                <div class="city-tag main-city">Lynchburg</div>
+                <div class="city-tag">Amherst</div>
+                <div class="city-tag">Bedford</div>
+                <div class="city-tag">Forest</div>
+                <div class="city-tag">Madison Heights</div>
+                <div class="city-tag">Rustburg</div>
+                <div class="city-tag">Appomattox</div>
+                <div class="city-tag" data-i18n="service_area_others">Surrounding Areas</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="bilingual-label text-center" data-i18n="testimonials_label">What Our Clients Say</div>
+            <div class="testimonials-grid">
+                <div class="test-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="quote">"Escalate built an amazing booking system for our business. Completely changed how we operate!"</p>
+                    <div class="client-info">
+                        <strong>Client Name</strong>
+                        <span>Business Name, Lynchburg</span>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="quote">"Un equipo increíble, nos ayudaron con nuestro sitio web y los resultados han sido fantásticos."</p>
+                    <div class="client-info">
+                        <strong>Client Name</strong>
+                        <span>Business Name, Forest</span>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="quote">"Professional, fast, and exactly what we needed to scale our operations."</p>
+                    <div class="client-info">
+                        <strong>Client Name</strong>
+                        <span>Business Name, Madison Heights</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container contact-container">
+            <div class="contact-form-wrapper">
+                <h2 class="section-title" data-i18n="contact_title">Start Your Project</h2>
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- WEB3FORMS ACCESS KEY - Replace YOUR_KEY_HERE with the key sent to your email -->
+                    <input type="hidden" name="access_key" value="b7a6fd98-94ae-40ca-8043-f1a16948a521">
+                    <div class="form-group">
+                        <label for="name" data-i18n="form_name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="form_email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-i18n="form_phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service" data-i18n="form_service">Service of Interest</label>
+                        <div class="select-wrapper">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected data-i18n="form_service_placeholder">Select a service...</option>
+                                <option value="website" data-i18n="form_opt_website">Website</option>
+                                <option value="app" data-i18n="form_opt_app">Mobile App</option>
+                                <option value="automation" data-i18n="form_opt_auto">Automation</option>
+                                <option value="unsure" data-i18n="form_opt_unsure">Not Sure</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="form_message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit" data-i18n="form_submit">Send Message</button>
+                    <p class="form-note" data-i18n="form_note">We'll respond within 48 hours in English or Spanish.</p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2 class="section-title" data-i18n="contact_info_title">Get In Touch</h2>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <strong data-i18n="info_phone">Phone</strong>
+                        <p>(555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong data-i18n="info_email">Email</strong>
+                        <p>escalateagency234@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong data-i18n="info_location">Location</strong>
+                        <p>Lynchburg, VA</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="far fa-clock"></i>
+                    <div>
+                        <strong data-i18n="info_hours">Business Hours</strong>
+                        <p>Mon-Sun, 9am - 10pm</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="Escalate Agency" onerror="this.style.display='none'; document.getElementById('footer-logo-text').style.display='block';">
+                    <span id="footer-logo-text" style="display:none;" class="logo-text-fallback">ESCALATE <span class="gold">AGENCY</span></span>
+                </a>
+                <p class="tagline">Automation | Webs & Apps</p>
+                <div class="footer-lang">
+                    <button id="footer-lang-toggle" class="lang-toggle">
+                        <span class="lang-en active">EN</span>|<span class="lang-es">ES</span>
+                    </button>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer_links">Quick Links</h4>
+                <a href="#services" data-i18n="nav_services">Services</a>
+                <a href="#process" data-i18n="nav_process">Process</a>
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+            </div>
+            <div class="footer-owners">
+                <h4 data-i18n="footer_leadership">Leadership</h4>
+                <p>Luis Guerrero</p>
+                <p>Jose Gutierrez</p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p data-i18n="footer_copyright">&copy; 2025 Escalate Agency. All Rights Reserved.</p>
+            <p class="disclaimer" data-i18n="footer_disclaimer">Serving Lynchburg, VA and surrounding communities.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Web3Forms fetch-based submission (overrides any mailto behavior)
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const submitBtn = form.querySelector('.btn-submit');
+            const originalText = submitBtn.textContent;
+
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    submitBtn.textContent = '✓ Message Sent!';
+                    submitBtn.style.background = '#22c55e';
+                    form.reset();
+                    setTimeout(() => {
+                        submitBtn.textContent = originalText;
+                        submitBtn.style.background = '';
+                        submitBtn.disabled = false;
+                    }, 4000);
+                } else {
+                    throw new Error(data.message || 'Submission failed');
+                }
+            } catch (error) {
+                submitBtn.textContent = 'Error — Try Again';
+                submitBtn.style.background = '#ef4444';
+                submitBtn.disabled = false;
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.background = '';
+                }, 4000);
+            }
+        });
+    </script>
+</body>
+</html>
