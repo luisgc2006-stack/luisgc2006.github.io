@@ -48,7 +48,7 @@ const translations = {
         
         about_title: "Who We Are",
         about_mission: "Built by locals, for locals. We understand the hustle of small business — because we live it too.",
-        about_desc: "At Escalate Agency, we build custom websites, mobile applications, and automation systems for small and local businesses. We serve companies that require automations, apps, or a stronger online presence.",
+        about_desc: "At Escalate Agency, we develop intelligent automation systems, mobile applications, and custom websites. We are dedicated to serving companies that require process optimization, powerful apps, or a stronger online presence.",
         owner_title: "Co-Owner / Co-Fundador",
         owner_1_bio: "Tech enthusiast bridging business and code.",
         owner_2_bio: "Strategy focused on scaling local brands.",
@@ -131,7 +131,7 @@ const translations = {
         
         about_title: "Quiénes Somos",
         about_mission: "Construido por locales, para locales. Entendemos el esfuerzo del negocio pequeño — porque también lo vivimos.",
-        about_desc: "En Escalate Agency creamos páginas web personalizadas, aplicaciones móviles y sistemas de automatización para negocios pequeños y locales. Servimos a empresas que requieren automatizaciones, aplicaciones o una mayor presencia en línea.",
+        about_desc: "En Escalate Agency desarrollamos sistemas de automatización, aplicaciones móviles y páginas web personalizadas. Nos enfocamos en servir a empresas que requieren optimizar sus procesos, desarrollar aplicaciones o fortalecer su presencia en línea.",
         owner_title: "Co-Fundador / Co-Owner",
         owner_1_bio: "Apasionado por conectar la tecnología con los negocios.",
         owner_2_bio: "Estrategia enfocada en hacer crecer marcas locales.",
