@@ -48,7 +48,7 @@ const translations = {
         
         about_title: "Who We Are",
         about_mission: "Built by locals, for locals. We understand the hustle of small business — because we live it too.",
-        about_desc: "Escalate Agency was founded to bridge the digital gap for small and Latino-owned businesses in Central Virginia. We provide enterprise-level digital solutions scaled and priced for local growth.",
+        about_desc: "At Escalate Agency, we build custom websites, mobile applications, and automation systems for small and local businesses. We serve companies that require automations, apps, or a stronger online presence.",
         owner_title: "Co-Owner / Co-Fundador",
         owner_1_bio: "Tech enthusiast bridging business and code.",
         owner_2_bio: "Strategy focused on scaling local brands.",
@@ -131,7 +131,7 @@ const translations = {
         
         about_title: "Quiénes Somos",
         about_mission: "Construido por locales, para locales. Entendemos el esfuerzo del negocio pequeño — porque también lo vivimos.",
-        about_desc: "Escalate Agency se fundó para cerrar la brecha digital en empresas pequeñas y negocios hispanos en el centro de Virginia. Proveemos soluciones de nivel empresarial ajustadas para el crecimiento local.",
+        about_desc: "En Escalate Agency creamos páginas web personalizadas, aplicaciones móviles y sistemas de automatización para negocios pequeños y locales. Servimos a empresas que requieren automatizaciones, aplicaciones o una mayor presencia en línea.",
         owner_title: "Co-Fundador / Co-Owner",
         owner_1_bio: "Apasionado por conectar la tecnología con los negocios.",
         owner_2_bio: "Estrategia enfocada en hacer crecer marcas locales.",
@@ -260,4 +260,45 @@ function checkReveal() {
 window.addEventListener('load', checkReveal);
 window.addEventListener('scroll', checkReveal);
 
-// Form submission is handled by the HTML form action pointing to formsubmit.co
+// --- Form Submission Logic (Web3Forms AJAX) ---
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.textContent;
+    
+    // Change button text while sending
+    btn.textContent = currentLang === 'en' ? 'Sending...' : 'Enviando...';
+    
+    const formData = new FormData(form);
+
+    fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+    })
+    .then(async (response) => {
+        let json = await response.json();
+        if (response.status == 200) {
+            btn.textContent = currentLang === 'en' ? 'Sent Successfully!' : '¡Enviado con éxito!';
+            btn.style.background = 'var(--accent-cyan)';
+            btn.style.color = 'var(--bg-black)';
+            form.reset();
+        } else {
+            console.error(response);
+            btn.textContent = currentLang === 'en' ? 'Error sending' : 'Error al enviar';
+            btn.style.background = 'var(--highlight-red)';
+        }
+    })
+    .catch(error => {
+        console.error(error);
+        btn.textContent = currentLang === 'en' ? 'Error sending' : 'Error al enviar';
+        btn.style.background = 'var(--highlight-red)';
+    })
+    .finally(() => {
+        setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.style.color = '';
+        }, 4000);
+    });
+});
